@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нипоноскадзор</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', 'Verdana', sans-serif;
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQYV2NkYGBgYGBgYGBgYOBgYGBgYGBgYOBgYAAAAAAL6AD3cAAAAAElFTkSuQmCC') repeat, linear-gradient(135deg, #0078d7, #00cc6a);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .header {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .header img {
+            max-width: 300px;
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.5));
+            border-radius: 8px;
+        }
+        .news {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.3), 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+        .news img {
+            max-width: 100%;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 0 10px rgba(0, 120, 215, 0.5);
+        }
+        .news h2 {
+            color: #fff;
+            font-size: 26px;
+            text-shadow: 0 0 5px rgba(0, 120, 215, 0.8);
+            margin: 0 0 10px;
+        }
+        .news p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #e6f3ff;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 25px;
+            background: linear-gradient(to bottom, #00ccff, #0078d7);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        }
+        .button:hover {
+            background: linear-gradient(to bottom, #33ddff, #0099ff);
+            box-shadow: 0 4px 15px rgba(0, 120, 215, 0.7), inset 0 1px 3px rgba(255, 255, 255, 0.8);
+            transform: translateY(-1px);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #e6f3ff;
+            text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes pulse {
+            0% { filter: drop-shadow(0 0 5px rgba(0, 120, 215, 0.5)); }
+            50% { filter: drop-shadow(0 0 12px rgba(0, 120, 215, 0.8)); }
+            100% { filter: drop-shadow(0 0 5px rgba(0, 120, 215, 0.5)); }
+        }
+        .header img:hover, .news img:hover {
+            animation: pulse 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="niponoskadzor.png" alt="Нипоноскадзор Логотип">
+        </div>
+        <div class="news">
+            <img src="rule34block.png" alt="Rule34.XXX Заблокирован">
+            <h2>Rule34.XXX больше недоступен в Нипонляндии!</h2>
+            <p>Уважаемые граждане Нипонляндии! По решению Нипоноскадзора, с 21 июля 2025 года доступ к сайту Rule34.XXX полностью ограничен на территории нашей страны. Это сделано для защиты культурных ценностей и общественного порядка. Благодарим за понимание!</p>
+            <a href="#" class="button">Подробнее</a>
+        </div>
+    </div>
+    <div class="footer">
+        © 2025 Нипоноскадзор. Все права защищены.
+    </div>
+</body>
+</html>
